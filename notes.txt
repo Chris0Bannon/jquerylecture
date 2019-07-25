@@ -1,0 +1,63 @@
+Jquery is a library used to manipulate HTML
+
+it works off of events, mouse over, click etc.
+it can make requests from other websites
+
+all of jquery is javascript.  It is another layer of javascript.
+it has its own layer of processing and its own syntax grammar and rules
+
+what is a DOM.  The document Obeject Model.
+the dom is what the user sees.
+
+document
+HTML
+head
+scripts go here
+links go here
+head
+body
+all the other fun tags with parents and their children.
+body
+html
+
+CDN is a content delivery network. 'I don't have a copy of it go to the internet
+and get me a copy of it'
+dont use that unless you have to.  Its better to have your own copy of jquery.
+
+jquery can do stuff when the dom is finished loading
+jquery can do stuff after an event happens.
+
+gotta have $() to select something with jquery.  something to watch or something to monitor.
+
+.ready(), .onclick()... . then a thing then()  means when this happens do (this)
+
+$hey jquery(when this).does this(do this)
+
+document ready is important because you cant change the dom until it exists.  it needs to load first.
+
+you re going to this a lot!!!:
+
+$(document).ready(handleReady)
+
+function handleReady(){
+console.log('DOM is ready');
+}
+
+Jquery uses selectors the same way that CSS does.  you can select by id or class or elements
+$('#some-id')
+$('.some-class')
+$('li')
+$('li a')
+$('.mic', '.check')
+
+these selectors return an Obeject to you!!! 
+
+you can navigate as well this is called method chaining
+
+$('li').parent();
+$('ul').children().first();
+
+.append crates a new element at the end of your selector!!!!!
+.preppend puts it on the front!!
+
+the word this in jquery is the word originator
